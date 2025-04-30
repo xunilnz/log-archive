@@ -17,4 +17,7 @@ gcc log-archive.c -o log-archive
 ```
 sudo mv ./log-archive /usr/local/bin/log-archive
 ```
-
+## Usage
+```
+log-archive </directory/to/archive/> </directory/to/store/archive/>
+```
