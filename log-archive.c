@@ -14,7 +14,7 @@ int main(int argc,char* argv[])
 	struct tm tm = *localtime(&t);
 	DIR *d, *d1;
 	struct dirent *dir;
-	if(argc==3)
+	if(argc>=2)
 	{
 		char* path = argv[1];
 		char* path2 = argv[2];
@@ -26,7 +26,7 @@ int main(int argc,char* argv[])
 			closedir(d);
             closedir(d1);
 			printf("Archiving directory %s to %s\n\n",path, path2);
-			snprintf(buffer, sizeof(buffer), "tar -cf %slogs_archive_%d%02d%02d_%02d%02d%02d.tar.gz %s", path2, tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, path);
+			snprintf(buffer, sizeof(buffer), "tar -czvf %s/logs_archive_%d%02d%02d_%02d%02d%02d.tar.gz -C %s .", path2, tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, path);
 			system(buffer);
 		}
 		else if (ENOENT == errno)
@@ -37,7 +37,7 @@ int main(int argc,char* argv[])
 		}
 		else
 		{
-			printf("error: no directory passed\n\nPlease use the following syntax:\n\nlog-archive </directory/to/archive> <target/directory>\n\nIf no target ddirectory is specified, the program will use the current.\n");
+			printf("error: no directory passed\n\nPlease use the following syntax:\n\nlog-archive </directory/to/archive> <target/directory>\n\nIf no target directory is specified, the program will use the current.\n");
 			return 1;
 		}
 }
