@@ -9,12 +9,12 @@ This is just one method of completing this task, in this case it is done in C. H
 ## Compile
 
 ```
-~$ gcc log-archive.c -o log-archive
+gcc log-archive.c -o log-archive
 ```
 
 ## Install
 
 ```
-~$ sudo mv ./log-archive /usr/local/bin/log-archive
-
+sudo mv ./log-archive /usr/local/bin/log-archive
+```
 
