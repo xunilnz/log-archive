@@ -21,3 +21,9 @@ sudo mv ./log-archive /usr/local/bin/log-archive
 ```
 log-archive </directory/to/archive/> </directory/to/store/archive/>
 ```
+**Example**
+
+~$ log-archive /var/log/apt/ ~/backup
+
+The above will archive the content of /var/log/apt and store the .tar.gz in your home folder under backup.
+
