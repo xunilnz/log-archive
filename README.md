@@ -5,19 +5,24 @@ log-archive takes a directory as a parameter and creates a tar.gz archive of the
 The tar.gz filename includes the date and time the program was run.
 
 This is just one method of completing this task, in this case it is done in C. However a bash script could achieve the same thing quite easily.
+
+## Getting Started
+### Clone the repository
+git clone https://github.com/ZL4KJ/log-archive.git
+cd log-archive
  
-## Compile
+### Compile
 
 ```
 gcc log-archive.c -o log-archive
 ```
 
-## Install
+### Install
 
 ```
 sudo mv ./log-archive /usr/local/bin/log-archive
 ```
-## Usage
+### Usage
 ```
 log-archive </directory/to/archive/> </directory/to/store/archive/>
 ```
