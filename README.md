@@ -23,7 +23,7 @@ log-archive </directory/to/archive/> </directory/to/store/archive/>
 ```
 **Example**
 
-<pre><font color="#55FF55"><b>➜ </b></font><font color="#55FFFF"><b>log-archive</b></font> <font color="#5555FF"><b>git:(</b></font><font color="#FF5555"><b>main</b></font><font color="#5555FF"><b>)</b></font></pre> log-archive /var/log/apt/ ~/backup
+<pre><font color="#55FF55"><b>➜ </b></font><font color="#55FFFF"><b>log-archive</b></font> <font color="#5555FF"><b>git:(</b></font><font color="#FF5555"><b>main</b></font><font color="#5555FF"><b>)</b></font> ./log-archive /var/log/apt/ ~/backup</pre>
 
 The above will archive the content of /var/log/apt and store the .tar.gz in your home folder under backup.
 
