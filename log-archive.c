@@ -9,7 +9,7 @@ char buffer[128];
 int main(int argc,char* argv[])
 {
 	printf("\e[1;1H\e[2J"); // Clears the terminal window. 
-	printf("log-archive v1.0.1 by ZL4KJ\n\n");
+	printf("log-archive v1.0.1 by Kim Jansen\n\n");
 	time_t t = time(NULL);
 	struct tm tm = *localtime(&t);
 	DIR *d, *d1;
