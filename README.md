@@ -9,7 +9,7 @@ This is just one method of completing this task, in this case it is done in C. H
 ## Getting Started
 ### Clone the repository
 ```
-git clone https://github.com/ZL4KJ/log-archive.git
+git clone https://github.com/xunilnz/log-archive.git
 cd log-archive
 ```
  
